@@ -9,8 +9,7 @@ const initialState = 0
 //bikin nilai reducer
 //berikan countState dan action lalu、dibikin bisa dapat countState balik 
 const reducerFunc = (countState, action)=> {
-//reducer関数にincrement、increment、reset処理を書く
-//どの処理を渡すかはactionを渡すことによって判断する
+
   switch (action){
     case 'increment':
       return countState + 1
@@ -23,10 +22,7 @@ const reducerFunc = (countState, action)=> {
   }
 }
 const Reducer = () => {
-//作成したreducerFunc関数とcountStateをuseReducerに渡す
-//useReducerはcountStateとdispatchをペアで返すので、それぞれを分割代入
   const [count, dispatch] = useReducer(reducerFunc, initialState)
-//カウント数とそれぞれのactionを実行する<Button/>を設置する
   return (
     <>
       <h2>Count：{count}</h2>
