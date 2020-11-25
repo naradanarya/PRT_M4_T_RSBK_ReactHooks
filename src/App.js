@@ -16,7 +16,7 @@ function App() {
           <nav>
             <ul>
               <li>
-                <Link to="/">Homeaa</Link>
+                <Link to="/">Home</Link>
               </li>
               <li>
                 <Link to="/efek">useEffect</Link>
