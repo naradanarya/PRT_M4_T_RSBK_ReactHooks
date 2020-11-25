@@ -22,7 +22,7 @@ function App() {
                 <Link to="/efek">useEffect</Link>
               </li>
               <li>
-                <Link to="/reducer">UseReducer</Link>
+                <Link to="/reducer">useReducer</Link>
               </li>
               <li>
                 <Link to="/ref">useRef</Link>

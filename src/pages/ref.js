@@ -6,12 +6,12 @@ const Ref = () => {
     const handleClick = () => {
       setText(inputEl.current.value);
     };
-    console.log("描画！！");
+    console.log("Test！！");
     return (
       <>
         <input ref={inputEl} type="text" />
         <button onClick={handleClick}>set text</button>
-        <p>テキスト : {text}</p>
+        <p>Text : {text}</p>
       </>
     );
   };

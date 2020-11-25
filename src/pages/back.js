@@ -1,16 +1,16 @@
-//ReactからuseCallbackをimport
+//dari React lakukan import useCallback
 import React, {useState, useCallback} from 'react'
 
-//Titleコンポーネント(子)
+//Title component(子)
 //React.memoでラップ
 const Title = React.memo(() => {
   console.log('Title component')
   return (
-    <h2>useCallBackTest vol.1</h2>
+    <h2>useCallBackTest </h2>
   )
 })
 
-//Buttonコンポーネント(子)
+//Button componet(child)
 //React.memoでラップ
 const Button = React.memo(({handleClick,value}) => {
   console.log('Button child component', value)
@@ -24,7 +24,7 @@ const Count = React.memo(({text, countState}) => {
   return <p>{text}:{countState}</p>
 })
 
-//Counterコンポーネント（親）
+//Counter component（parent）
 const Back = () => {
 
   const [firstCountState, setFirstCountState] = useState(0)
@@ -42,10 +42,10 @@ const Back = () => {
   return (
     <>
       <Title/>
-      <Count text="+ 1 ボタン" countState={firstCountState}/>
-      <Count text="+ 10 ボタン" countState={secondCountState}/>
-      <Button handleClick={incrementFirstCounter} value={'+1 ボタン'}/>
-      <Button handleClick={incrementSecondCounter} value={'+10 ボタン'}/>
+      <Count text="+ 1 Button" countState={firstCountState}/>
+      <Count text="+ 10 Button" countState={secondCountState}/>
+      <Button handleClick={incrementFirstCounter} value={'+1 Button'}/>
+      <Button handleClick={incrementSecondCounter} value={'+10 Button'}/>
     </>
   )
 }
